@@ -1,0 +1,50 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(86, 84, 84);
+	overflow: hidden;
+	animation: spin 3s infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		background-color: rgba(0, 0, 0, 0.532);
+	}
+	to {
+		transform: rotate(360deg);
+		background-color: rgba(255, 248, 220, 0.216);
+	}
+}
+
+.center {
+	width: 3vw;
+	height: 3vw;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #56cefa;
+}
+
+.orbit {
+	width: 7vw;
+	height: 20vw;
+	position: absolute;
+	border-radius: 50%;
+	border: 0.6vw solid #3da5cb;
+}
+
+.orbit-1 {
+	transform: rotate(30deg);
+}
+
+.orbit-2 {
+	transform: rotate(-30deg);
+}
+
+.orbit-3 {
+	transform: rotate(90deg);
+}
